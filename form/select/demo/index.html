@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form action="">
+	<fieldset>
+		<label for="normal-select">Country:</label>
+		<select name="normal-select" id="normal-select" class="normal-select">
+			<option value="">Selecione</option>
+			<option value="1">Brazil</option>
+			<option value="2">USA</option>
+		</select>
+
+		<label for="custom-select">Country:</label>
+		<select name="custom-select" id="custom-select" class="custom-select">
+			<option value="">Selecione</option>
+			<option value="1">Brazil</option>
+			<option value="2">USA</option>
+		</select>
+	</fieldset>
+</form>
+
+<script type="text/javascript" src="../../../jquery-1.11.1.js"></script>
+<script type="text/javascript" src="../jquery.custom-select.js"></script>
+<script>
+	$(function(){
+		$('.custom-select').select();
+		var bleh = $('.custom-select').select('open', {foo: 'blah'});
+		console.log('open returns', bleh)
+		$('.custom-select').select('destroy');
+	});
+</script>
+</body>
+</html>
