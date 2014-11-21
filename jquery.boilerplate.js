@@ -95,4 +95,4 @@
         return returns !== undefined ? returns : this;
     };
 
-})(jQuery, window, document);
+});
