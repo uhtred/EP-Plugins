@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Keyboard Navigation</title>
+	<style>
+		.list {
+			width: 200px;
+		}
+
+		.item {
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+
+		.keyboardnav--current {
+			background-color: #CCC;
+			color: #FFF;
+		}
+	</style>
+
+	<script src="../jquery-1.11.1.js"></script>
+	<script src="keyboard-nav.js"></script>
+</head>
+<body>
+<ul class="list">
+	<li class="item">Item 1</li>
+	<li class="item">Item 2</li>
+	<li class="item">Item 3</li>
+</ul>
+
+<script>
+	$(function(){
+		$('.list').keyboardnav();
+	});
+</script>
+</body>
+</html>
